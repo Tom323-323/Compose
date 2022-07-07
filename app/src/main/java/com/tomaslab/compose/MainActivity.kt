@@ -16,14 +16,15 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-
+            NewText()
         }
     }
 }
 
+@Preview (showBackground = true)
 @Composable
-fun newText(text: String){
-    Text(text = "Hi")
+fun NewText(){
+    Text(text = "TEXT")
 }
 
 
